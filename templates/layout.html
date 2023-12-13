@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Weather App - {% block title %}Layout{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+<div id="nav">
+    <a href="{{ url_for('index') }}">Home</a> |
+    <a href="{{ url_for('about') }}">About</a>
+</div>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+<div id="footer">
+    {% block footer %}
+        <p>Weather App by Sachh Moka</p>
+        <p>Layout copied from: IT@JCU Flask Demo by Lindsay Ward - <a href="http://github.com/lindsaymarkward/flaskdemo">Original source on GitHub</a>.</p>
+    {% endblock %}
+</div>
+</body>
+</html>
