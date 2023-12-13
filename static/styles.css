@@ -1,0 +1,13 @@
+body {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    margin: 0;
+}
+
+#nav, #footer {
+    background-color: #eee;
+    padding: 1em;
+}
+
+#content {
+    margin-left: 3em;
+}
