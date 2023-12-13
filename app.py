@@ -3,8 +3,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    location = location.get_ip()
-    return render_template('index.html')
+    todays_weather = "TODAY'S WEATHER GO BRRRRRRR"
+    return render_template('index.html', todays_weather=todays_weather)
 
 @app.route('/about')
 def about():

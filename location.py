@@ -2,7 +2,7 @@
 location.py
 
 Get location from ip using ipfy and ipapi api 
-Code from: https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/
+Code modified from: https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/
 """
 
 import requests
