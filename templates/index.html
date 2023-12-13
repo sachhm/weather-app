@@ -2,10 +2,9 @@
 {% block title %}Home{% endblock %}
 {% block content %}
     <h1>Today's Weather</h1>
-    <p>This is where the API comes into place. A big picture of today's weather will pop up</p>
-    <p>Today's forecast is: {{todays_weather}}</p>
+    <p>Location: {{city}}, {{country}}</p>
+    <p>Today's forecast features {{max_temp}} highs with lows of around {{min_temp}}</p>
 
     <h2>Forecast</h2>
-    <p>This is an additonal nice to have feature that pretty much covers the weather for the following week</p>
-    <p>{{week_forecast}}</p>
+    <p>This is an additonal nice to have feature that pretty much covers the weather for the following week (Cool for a future update)</p>
 {% endblock %}

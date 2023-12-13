@@ -16,6 +16,8 @@ def get_location():
     response = requests.get(f'http://ip-api.com/json/{ip_address}').json()
     print(response)
     location_data = {
+        "city": response.get("city"),
+        "country": response.get("country"),
         "latitude": response.get("lat"),
         "longitude": response.get("lon")
     }

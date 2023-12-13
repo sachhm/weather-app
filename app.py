@@ -1,11 +1,17 @@
+import weather, location
 from flask import Flask, render_template, request, redirect, url_for, session
+
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
-    todays_weather = "TODAY'S WEATHER GO BRRRRRRR"
-    week_forecast = "Work in progress"
-    return render_template('index.html', todays_weather=todays_weather, week_forecast=week_forecast)
+    location_data = location.get_location()
+    city = location_data["city"]
+    country = location_data["country"]
+    max_temp = round(weather.get_maximum_temperature(),2)
+    min_temp = round(weather.get_minimum_temperature(),2)
+    return render_template('index.html', city=city, country=country, max_temp=max_temp, min_temp=min_temp)
 
 @app.route('/about')
 def about():
