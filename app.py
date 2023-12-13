@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     todays_weather = "TODAY'S WEATHER GO BRRRRRRR"
-    week_forecast = {"day1":10, "day2":100}
+    week_forecast = "Work in progress"
     return render_template('index.html', todays_weather=todays_weather, week_forecast=week_forecast)
 
 @app.route('/about')

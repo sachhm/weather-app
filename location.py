@@ -1,8 +1,7 @@
 """
 location.py
 
-Get location from ip using ipfy and ipapi api 
-Code modified from: https://www.freecodecamp.org/news/how-to-get-location-information-of-ip-address-using-python/
+Get location using ipfy and ip-api
 """
 
 import requests
@@ -14,10 +13,11 @@ def get_ip():
 
 def get_location():
     ip_address = get_ip()
-    response = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
+    response = requests.get(f'http://ip-api.com/json/{ip_address}').json()
+    print(response)
     location_data = {
-        "latitude": response.get("latitude"),
-        "longitude": response.get("longitude")
+        "latitude": response.get("lat"),
+        "longitude": response.get("lon")
     }
     return location_data
 
