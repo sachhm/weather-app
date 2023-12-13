@@ -22,6 +22,3 @@ def get_location():
         "longitude": response.get("lon")
     }
     return location_data
-
-
-print(get_location())
