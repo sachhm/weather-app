@@ -4,7 +4,7 @@ A basic weather app to provide weather information using the Open-Meteo API. It 
 # About
 The app's purpose was to for me to learn more about using APIs and Python, along with the Flask framework. It uses the aformentioned Open-Meteo API for weather tracking, as well as IPFY and IP-API for determining location. 
 
-Right now the app is very basic, and uses datetime to print the current minimum nad maximum temperatures using datetime.
+Right now the app is very basic, and uses datetime determine today's date, and accesses the 2M (surface level) highs and lows for the IP determined location.
 
 ![V1.0](/screenshot/v1.0.png)
 
