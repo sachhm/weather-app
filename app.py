@@ -12,10 +12,12 @@ def index():
     # max_temp = round(weather.get_maximum_temperature(),2)
     # min_temp = round(weather.get_minimum_temperature(),2)
 
+    # dummy input
     city = "City"
     country = "Country"
     max_temp = 2.31
     min_temp = -10.31
+    
     return render_template('index.html', city=city, country=country, max_temp=max_temp, min_temp=min_temp)
 
 @app.route('/about')

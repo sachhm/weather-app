@@ -1,14 +1,17 @@
 /*styles.css*/
+html{
+    height:100%;
+    background: linear-gradient(0deg,rgb(124, 176, 255),    rgb(255, 255, 104) 80%) no-repeat;
+}
 
 body {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
-    background-color: rgb(245, 245, 240); /*The Fabien Sanglard special*/
     margin: 0;
 }
 
-#nav {
-    background-color: rgb(255, 255, 104);
-}
+/* #nav {
+    background-color: ;
+} */
 
 #nav, #footer {
     padding-top: 1em;
@@ -18,12 +21,12 @@ body {
 
 #content {
     text-align: center;
-    word-wrap: break-word;
 }
 
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgb(124, 176, 255);
+    /* ; */
   }
+
