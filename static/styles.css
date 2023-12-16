@@ -9,10 +9,6 @@ body {
     margin: 0;
 }
 
-/* #nav {
-    background-color: ;
-} */
-
 #nav, #footer {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -29,4 +25,3 @@ body {
     width: 100%;
     /* ; */
   }
-
