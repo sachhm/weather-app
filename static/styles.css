@@ -1,19 +1,21 @@
-/*styles.css*/
-html{
-    height:100%;
-    background: linear-gradient(180deg,rgb(124, 176, 255),    rgb(255, 255, 203) 95%) no-repeat;
+/* styles.css */
+
+html {
+    height: 100%;
+    background: linear-gradient(180deg, rgb(124, 176, 255), rgb(255, 255, 203) 95%) no-repeat;
+    background-size: cover; /* Ensure the gradient covers the entire viewport */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
+h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 64px;
 }
 
-#content ul{
+#content ul {
     text-align: left;
     padding-left: 5.25em;
 }
@@ -21,35 +23,48 @@ h1{
 #nav, #footer {
     font-family: 'Roboto', sans-serif;
     font-size: large;
-
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    
 }
 
 #content {
-    margin-left: 16em;
-    margin-right: 16em;
+    margin: 0 16em; /* Use shorthand for margin */
     padding-bottom: 3em;
-    border: black solid;
+    border: solid black; /* Specify border properties separately */
     text-align: center;
     font-size: 25px;
+    background-color: rgba(179, 210, 255, 0.5);
 }
 
-#nav a{
+#nav {
+    margin: 2em 45%; /* Use relative units for better responsiveness */
+    border: solid black;
+    background-color: rgba(179, 210, 255, 0.5);
+}
+
+#nav a {
     font-size: large;
     text-decoration: none;
     color: black;
 }
 
-#nav a:hover{
+#nav a:hover {
     color: white;
 }
 
 #footer {
+    text-align: center;
+    margin: 2em 40%; /* Use the same relative margin as #nav for consistency */
+    border: solid black;
+    background-color: rgb(241, 241, 209); /* Use the same background color as #nav */
     position: absolute;
     bottom: 0;
-    width: 100%;
-    /* ; */
-  }
+    left: 0;
+    right: 0;
+    padding: 1em; /* Add padding for consistency with #nav */
+}
+
+#content, #nav, #footer {
+    border-radius: 5px; /* Adjust the value to control the roundness */
+}

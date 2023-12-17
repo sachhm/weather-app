@@ -1,4 +1,4 @@
-# Weather App
+# Simple Weather App
 A basic weather app to provide weather information using the Open-Meteo API. It uses IP to determine location.
 
 # About
@@ -6,9 +6,8 @@ The app's purpose was to for me to learn more about using APIs and Python, along
 
 Right now the app is very basic, and uses datetime determine today's date, and accesses the 2M (surface level) highs and lows for the IP determined location.
 
-V2.0
-![V2.0](/img/v2.0.png)
-
+V3.0
+![Weather App V3.0](img/v3.0.png)
 # TODO
 - Implement forecast for week feature
 - Speed up program (one major bottleneck is that the location and weather calls are made every time the home page is loaded)
