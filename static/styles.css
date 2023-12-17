@@ -6,19 +6,26 @@ html{
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
 
 h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 64px;
 }
+
+#content ul{
+    text-align: left;
+    padding-left: 5.25em;
+}
+
 #nav, #footer {
     font-family: 'Roboto', sans-serif;
+    font-size: large;
 
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
+    
 }
 
 #content {
@@ -28,6 +35,16 @@ h1{
     border: black solid;
     text-align: center;
     font-size: 25px;
+}
+
+#nav a{
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+#nav a:hover{
+    color: white;
 }
 
 #footer {
