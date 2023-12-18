@@ -9,7 +9,7 @@ Right now the app is very basic, and uses datetime determine today's date, and a
 V3.0
 ![Weather App V3.0](img/v3.0.png)
 # TODO
-- Implement forecast for week feature
+- Implement week forcast
 - Speed up program (one major bottleneck is that the location and weather calls are made every time the home page is loaded)
 - ~~- Improve design (Make it look pretty)~~
 
