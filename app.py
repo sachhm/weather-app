@@ -1,3 +1,9 @@
+"""
+app.py
+
+Main app for site
+
+"""
 import weather, location
 from flask import Flask, render_template, request, redirect, url_for, session
 
