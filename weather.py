@@ -55,8 +55,8 @@ daily_dataframe = pd.DataFrame(data = daily_data)
 
 def get_minimum_temperature():
 	"""Return today's minimum temperature"""
-	return float(daily_temperature_2m_max)
+	return float(daily_temperature_2m_min)
 
 def get_maximum_temperature():
 	"""Return today's maximum temperature"""
-	return float(daily_temperature_2m_min)
+	return float(daily_temperature_2m_max)
