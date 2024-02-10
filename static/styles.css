@@ -12,7 +12,7 @@ body {
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
+    font-size: 32px;
 }
 
 #content ul {
@@ -22,7 +22,7 @@ h1 {
 
 #nav, #footer {
     font-family: 'Roboto', sans-serif;
-    font-size: large;
+    font-size: medium;
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
@@ -33,7 +33,7 @@ h1 {
     padding-bottom: 3em;
     border: solid black; /* Specify border properties separately */
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     background-color: rgba(179, 210, 255, 0.5);
 }
 
@@ -57,6 +57,7 @@ h1 {
     text-align: center;
     margin: 2em 40%; /* Use the same relative margin as #nav for consistency */
     border: solid black;
+    font-size: small;
     background-color: rgb(241, 241, 209); /* Use the same background color as #nav */
     position: absolute;
     bottom: 0;
